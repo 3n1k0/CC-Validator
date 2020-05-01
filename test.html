@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card Validator</title>
+    <link rel="stylesheet" href="test.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <h1>Credit Card Validator</h1>
+    <div class = "intro"><p>Ever wondered if your credit card number is valid? <br> It's always good to be aware whether the numbers written on our cards are still valid. <br> You can easily check it with this simple tool. 
+      <br> Your data is safe with us.</p></div>
+    <div class= "feedback"></div>
+    <div class="container">
+      <form class="creditcard">
+        <div class="name-container">
+          <input class="name" type="text" name="name" autocomplete="off" required />
+          <label for="name" class="name-label">
+            <span class="content">Name</span>
+          </label>
+        </div>
+
+        <!-- <div class="expiry">
+          <label for="expiry" class="label-expiry">
+            <span class="content-expiry">Expiry Date</span>
+          </label>
+          <select id="expiry-date">
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+          </select>
+        </div> -->
+
+        <div class="ccn-container">
+          <input
+            class="ccn"
+            type="text"
+            name="ccn"
+            autocomplete="off"
+            required
+          />
+          <label for="ccn" class="ccn-label">
+            <span class="content">Credit Card Number</span>
+          </label>
+        </div>
+
+        <script src="test.js"></script>
+        <button type="submit">Check</button>
+      </form>
+    </div>
+  </body>
+</html>
